@@ -1,0 +1,29 @@
+# Personal environment configuration and secret-bearing files
+.env
+.env.*
+!.env.example
+*.local.bicepparam
+*.local.parameters.json
+*.secrets.json
+*.secret
+
+# SSH keys and local certificates
+.ssh/
+id_ed25519
+id_ed25519.pub
+id_rsa
+id_rsa.pub
+*.pem
+*.pfx
+*.key
+
+# PowerShell / editor temporary output
+*.log
+*.tmp
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
+
+# Local artifacts can be ignored separately if generated; do not blanket-ignore
+# JSON parameters or source-controlled configuration used by this project.
